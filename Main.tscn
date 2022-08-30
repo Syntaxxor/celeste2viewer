@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/viewer.gd" type="Script" id=1]
+[ext_resource path="res://scripts/moving_camera.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="level1" type="Node2D" parent="."]
+script = ExtResource( 1 )
+show_spritesheet = true
+pico8_file = "res://gamedata/1.p8"
+
+[node name="level2" type="Node2D" parent="."]
+position = Vector2( 672, 128 )
+script = ExtResource( 1 )
+pico8_file = "res://gamedata/2.p8"
+
+[node name="level3" type="Node2D" parent="."]
+position = Vector2( 928, 48 )
+script = ExtResource( 1 )
+pico8_file = "res://gamedata/3.p8"
+
+[node name="level4" type="Node2D" parent="."]
+position = Vector2( 1952, 104 )
+script = ExtResource( 1 )
+palette = [ 0, 1, 12, 3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+pico8_file = "res://gamedata/4.p8"
+
+[node name="level5" type="Node2D" parent="."]
+position = Vector2( 2976, 48 )
+script = ExtResource( 1 )
+palette = [ 0, 1, 14, 3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+pico8_file = "res://gamedata/5.p8"
+
+[node name="level6" type="Node2D" parent="."]
+position = Vector2( 4000, 8 )
+script = ExtResource( 1 )
+palette = [ 0, 1, 14, 3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+pico8_file = "res://gamedata/6.p8"
+
+[node name="level7" type="Node2D" parent="."]
+position = Vector2( 5024, -48 )
+script = ExtResource( 1 )
+palette = [ 0, 1, 12, 3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+pico8_file = "res://gamedata/7.p8"
+
+[node name="level8" type="Node2D" parent="."]
+position = Vector2( 6024, -40 )
+script = ExtResource( 1 )
+palette = [ 0, 1, 1, 3, 4, 5, 6, 11, 8, 9, 10, 11, 12, 13, 14, 15 ]
+show_spritesheet = true
+pico8_file = "res://gamedata/8.p8"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+script = ExtResource( 2 )

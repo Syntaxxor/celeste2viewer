@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TrippyTileset.png" type="Texture" id=1]
+
+[sub_resource type="TileSet" id=1]
+0/name = "TrippyTileset.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 16, Vector2( 0, 1 ), 24, Vector2( 0, 2 ), 18, Vector2( 0, 3 ), 26, Vector2( 1, 0 ), 48, Vector2( 1, 1 ), 56, Vector2( 1, 2 ), 50, Vector2( 1, 3 ), 58, Vector2( 2, 0 ), 144, Vector2( 2, 1 ), 152, Vector2( 2, 2 ), 146, Vector2( 2, 3 ), 154, Vector2( 3, 0 ), 176, Vector2( 3, 1 ), 184, Vector2( 3, 2 ), 178, Vector2( 3, 3 ), 186 ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 16, 16 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 196980, 0, 2, 262510, 0, 1, 262511, 0, 65537, 262512, 0, 65537, 262513, 0, 65537, 262514, 0, 65537, 262515, 0, 65537, 262516, 0, 196610, 328052, 0, 131074, 328055, 0, 2, 393588, 0, 131075, 393589, 0, 65537, 393590, 0, 65537, 393591, 0, 196611, 393592, 0, 65537, 393593, 0, 65538, 459120, 0, 2, 459124, 0, 131074, 459127, 0, 131074, 459129, 0, 131074, 524656, 0, 131075, 524657, 0, 65537, 524658, 0, 65537, 524659, 0, 65537, 524660, 0, 196609, 524661, 0, 65539, 524662, 0, 65537, 524663, 0, 196609, 524664, 0, 65537, 524665, 0, 196610, 590192, 0, 131074, 590197, 0, 131074, 590201, 0, 131074, 655727, 0, 1, 655728, 0, 196609, 655729, 0, 65537, 655730, 0, 65539, 655731, 0, 65537, 655732, 0, 65537, 655733, 0, 196610, 655737, 0, 131073, 655738, 0, 65537, 655739, 0, 65537, 655740, 0, 65536, 721266, 0, 131074, 721269, 0, 131074, 786802, 0, 131075, 786803, 0, 65537, 786804, 0, 65537, 786805, 0, 196609, 786806, 0, 65537, 786807, 0, 65537, 786808, 0, 65537, 786809, 0, 65538, 852338, 0, 131074, 852345, 0, 131074, 917874, 0, 131073, 917875, 0, 65537, 917876, 0, 65537, 917877, 0, 65537, 917878, 0, 65537, 917879, 0, 65537, 917880, 0, 65537, 917881, 0, 196611, 917882, 0, 65537, 917883, 0, 65537, 917884, 0, 65537, 917885, 0, 65536, 983417, 0, 131074, 1048953, 0, 131072 )
